@@ -330,6 +330,10 @@ type LinuxCPU struct {
 	Cpus string `json:"cpus,omitempty"`
 	// List of memory nodes in the cpuset. Default is to use any available memory node.
 	Mems string `json:"mems,omitempty"`
+
+	// Identity Group Identity features from Alibaba Cloud Linux
+	// link: https://www.alibabacloud.com/help/zh/doc-detail/338407.htm
+	Identity *int64 `json:"identity,omitempty"`
 }
 
 // LinuxPids for Linux cgroup 'pids' resource management (Linux 4.3)
